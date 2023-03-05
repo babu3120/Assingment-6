@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e2ec3557f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-center font-bold text-3xl mt-3">AI Universe Hub</h2>
+    </header>
+
+    <main>
+        <div class="mx-auto w-[150px] mt-8">
+            <button id="spinear" class="btn loading">short by</button>
+        </div>
+        <section class="px-12 mt-12">
+     
+            <div id="card" class="gap-3 lg:px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                
+            </div>
+        </section>
+
+        <section>
+            <input type="checkbox" id="modals" class="modal-toggle" />
+            <div class="modal">
+            <div class="modal-box lg:w-11/12 max-w-5xl h-[763px]">
+              <label for="modals" class="hover:bg-white btn btn-sm btn-circle bg-[#F1C3B9] absolute text-black right-2 top-2">✕</label>
+              <div class="w-[970px] h-[511px] lg:grid grid-cols-2 my-7 mx-auto">
+                  <div class="lg:w-12/12 h-full">
+                      <div class="w-[450px] h-[500px] my-auto bg-[#efe7e7] rounded-lg border-2 border-[#070201]" >
+                          <div class="mx-5 ">
+                              <h1 id="detailModel" class="pt-10 font-semibold text-2xl text-left ml-3"></h1>
+                              <div class="mt-7 flex gap-5">
+                                  <div class="w-[132px] h-[100px] bg-white rounded-2xl">
+                                      <h1 id="Prices" class="pt-5 font-bold text-base text-center text-[#03a30a]"><span id="price"></span><br><span id="plan">Basic</span> </h1>
+                                   </div>
+                                  <div class="w-[132px] h-[100px] bg-white rounded-2xl">
+                           <h1 id="Prices" class="pt-5 font-bold text-base text-center text-[#F28927]"><span id="price2"></span><br><span id="plan2">Pro</span> </h1>
+                                   </div>
+                                  <div class="w-[132px] h-[100px] bg-white rounded-2xl">
+                   <h1 id="Prices" class="pt-3 font-bold text-base text-center text-[#EB5757]"><span id="price3">Contact <br>Us for<br>pricing </h1>
+                                   </div>
+                                   
+                                      <div id="badge" class=" w-[140px] h-[32px] badge badge-error gap-2 absolute right-[120px] top-[85px]">
+                                      <h6 id="badgeTaitle" class="font-semibold text-base text-center text-white"> 94% accuracy</h6>
+                                  </div> 
+                                   <!---------modal section start  ---------->
+                              </div>
+                          </div>
+                          <div class="w-[700px]  flex gap-9 pt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                              <div class="w-[248px] h-[123px] pl-3">
+                                  <h1 class="font-semibold text-2xl text-left text-[#111111]">Features</h1>
+                                  <div id="feature"></div>
+                               </div>
+                               <div class="w-[180px] h-[123px]">
+                                  <h1 class="font-semibold text-2xl text-left text-[#111111]">Integrations</h1>
+                                  <div id="font">
+                                      
+                                  </div>
+                               </div>
+                           </div>
+                      </div>
+                  </div>
+                  <div >
+                      <div id="model-Img" class="w-[400px] h-[500px] my-auto rounded-lg border-2 border-[#070201]">
+                    
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center mb-3">
+                <button id="btn-seeMore" onclick="showAllDataS()" class="bg-red-600 px-3 py-2 rounded text-white">See More</button>
+            </div>
+        </section>
+    </main>
+      <script src="js/hub.js"></script>
+</body>
+</html>
